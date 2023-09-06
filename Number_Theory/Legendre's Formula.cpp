@@ -6,6 +6,7 @@ using namespace std;
 
 
 
+
 int largestPowerOfK(int n, int k) {
     
     map<int, int> factors;
@@ -23,8 +24,10 @@ int largestPowerOfK(int n, int k) {
         int prime = it.first;
         int count = it.second;
         int power = 0;
-        for(int i = prime; i <= n; i *= prime) {
-            power += n/i;
+        int k = n;
+        while(k) {
+            k /= prime;
+            power += k;
         }
         ans = min(ans, power / count);
     }
