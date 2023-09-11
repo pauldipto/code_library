@@ -30,5 +30,18 @@ int main()
     }
     
     cout << ans << endl;
+
+    //for strings
+
+    string s;
+    cin >> s;
+    
+    int ans = 0;
+    for(int i = 0; i < s.size(); i++) {
+        int bit = s[i] - '0';
+        ans = ans * 2 + bit;
+    }
+    
+    cout << ans << endl;
     
 }
