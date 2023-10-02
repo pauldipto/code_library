@@ -61,5 +61,10 @@ int main()
    
    cout << lowerBound(v, n, key) << endl;
    cout << upperBound(v, n, key) << endl;
+   
+   // for counting of a distinct integer in the sorted array
+   
+   int ans = upper_bound(v.begin(), v.end(), key) - lower_bound(v.begin(), v.end(), key);
+   cout << ans << endl;
 
 }
