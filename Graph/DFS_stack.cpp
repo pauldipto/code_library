@@ -18,7 +18,7 @@ int main()
    cin >> n >> m;
    vector<int> v[n + 1];
    
-   for(int i = 0; i < n; i++) {
+   for(int i = 0; i < m; i++) {
       int v1, v2;
       cin >> v1 >> v2;
       
