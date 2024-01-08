@@ -58,9 +58,7 @@ int main()
             if(it > n) {
                 break;
             }
-            else if(it <= n) {
-                num = legend(n, it);
-            }
+            num = legend(n, it);
             divisors = (1LL * divisors * (num + 1) ) % mod;
         }
         
