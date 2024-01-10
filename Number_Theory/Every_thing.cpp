@@ -32,8 +32,6 @@ int main()
         }
     }
     
-    // cout<<spf[22]<<endl;
-    // cout<<gpf[22]<<endl;
     
     int n;
     cin>>n;
@@ -42,9 +40,7 @@ int main()
         cin>>x;
         
         cout<<spf[x]<<" ";
-       
-        cout<<gcf[x]<<" ";
-        
+        cout<<gpf[x]<<" ";
         
         int distinct_prime_factors = 0;
         int total_prime_factors = 0;
