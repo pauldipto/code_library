@@ -45,22 +45,22 @@ int main()
       
   
   sort(c.begin(), c.end());  // vector<int> c
-	int mx = 0;
-	int lans = c[0], rans = c[0];
-	int l = c[0];
-	for(int i = 1; i < c.size(); i++) {
-		if(c[i]-1 == c[i-1]) {
-			if(c[i]-l > mx) {
-				lans = l;
-				rans = c[i];
-				mx = c[i]-l;
-			}
-		}
-		else {
-			l = c[i];
+  int mx = 0;
+ int lans = c[0], rans = c[0];
+ int l = c[0];
+ for(int i = 1; i < c.size(); i++) {
+	if(c[i]-1 == c[i-1]) {
+		if(c[i]-l > mx) {
+			lans = l;
+			rans = c[i];
+			mx = c[i]-l;
 		}
 	}
-	cout << lans << " " << rans << endl;  
+	else {
+		l = c[i];
+	}
+}
+cout << lans << " " << rans << endl;  
    
    
    
