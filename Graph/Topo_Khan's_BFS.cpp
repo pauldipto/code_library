@@ -37,7 +37,7 @@ vector<int> topoSort(int V, vector<int> adj[]) {
 	        }
 	    }
 	}
-	    return ans;
+	return ans;
 }  
 
 int main()
